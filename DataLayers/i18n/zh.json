@@ -67,5 +67,14 @@
     "tillable.tillable": "可耕地",
     "tillable.tilled": "耕种",
     "tillable.occupied": "被占用",
-    "tillable.not-tillable": "不可耕地"
+    "tillable.not-tillable": "不可耕地",
+
+    // forage //TODO
+    "forage.name": "Forage",
+    "forage.foregeable": "Forage items",
+
+    // animalpet //TODO
+    "animalpet.name": "Petting animals",
+    "animalpet.petted": "Pet animals",
+    "animalpet.notpetted": "Not yet pet animals"
 }

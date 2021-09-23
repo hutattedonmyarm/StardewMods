@@ -66,6 +66,9 @@ namespace Pathoschild.Stardew.DataLayers.Framework
 
             /// <summary>Settings for the forage layer.</summary>
             public LayerConfig Forage { get; set; } = new LayerConfig { UpdatesPerSecond = 2 };
+
+            /// <summary>Settings for the animal pet layer.</summary>
+            public LayerConfig AnimalPet { get; set; } = new LayerConfig { UpdatesPerSecond = 2 };
         }
     }
 }

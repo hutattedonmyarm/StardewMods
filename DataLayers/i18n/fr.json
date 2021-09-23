@@ -71,5 +71,11 @@
 
     // forage
     "forage.name": "Cueillette",
-    "forage.foregeable": "Objets cueillis"
+    "forage.foregeable": "Objets cueillis",
+
+    // animalpet //TODO
+    "animalpet.name": "Petting animals",
+    "animalpet.petted": "Pet animals",
+    "animalpet.notpetted": "Not yet pet animals"
+}
 }

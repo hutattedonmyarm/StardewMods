@@ -162,6 +162,16 @@ namespace Pathoschild.Stardew.DataLayers.Framework
 
             /// <summary>The unique key for a translation equivalent to "Forageable".</summary>
             public const string Forage_Foregeable = "forage.foregeable";
+
+
+            /// <summary>The unique key for a translation equivalent to "Animal Petting".</summary>
+            public const string Animalpet_Name = "animalpet.name";
+
+            /// <summary>The unique key for a translation equivalent to "Petted".</summary>
+            public const string Animalpet_Petted = "animalpet.petted";
+
+            /// <summary>The unique key for a translation equivalent to "Petted".</summary>
+            public const string Animalpet_NotPetted = "animalpet.notpetted";
         }
 
 
@@ -443,6 +453,12 @@ namespace Pathoschild.Stardew.DataLayers.Framework
         public static string Forage_Name()
         {
             return I18n.GetByKey(Keys.Forage_Name);
+        }
+
+        /// <summary>Get a translation equivalent to "Forage".</summary>
+        public static string Animalpet_Name()
+        {
+            return I18n.GetByKey(Keys.Animalpet_Name);
         }
 
         /// <summary>Get a translation by its key.</summary>

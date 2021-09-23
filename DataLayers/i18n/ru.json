@@ -67,5 +67,14 @@
     "tillable.tillable": "Почва доступна для обработки",
     "tillable.tilled": "Почва уже обработана",
     "tillable.occupied": "Обработка недоступна: присутствует преграда",
-    "tillable.not-tillable": "Невозможно обработать почву"
+    "tillable.not-tillable": "Невозможно обработать почву",
+
+    // forage //TODO
+    "forage.name": "Forage",
+    "forage.foregeable": "Forage items",
+
+    // animalpet //TODO
+    "animalpet.name": "Petting animals",
+    "animalpet.petted": "Pet animals",
+    "animalpet.notpetted": "Not yet pet animals"
 }

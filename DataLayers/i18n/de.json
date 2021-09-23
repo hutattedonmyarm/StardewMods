@@ -71,5 +71,10 @@
 
     // forage
     "forage.name": "Sammeln",
-    "forage.foregeable": "Sammelbare Gegenstände"
+    "forage.foregeable": "Sammelbare Gegenstände",
+
+    // forage
+    "animalpet.name": "Tiere streicheln",
+    "animalpet.petted": "Gestreichelte Tiere",
+    "animalpet.notpetted": "Nicht gestreichelte Tiere"
 }

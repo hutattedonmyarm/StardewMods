@@ -127,6 +127,8 @@ namespace Pathoschild.Stardew.DataLayers
                 yield return new TillableLayer(layers.Tillable);
             if (layers.Forage.IsEnabled())
                 yield return new ForageLayer(layers.Forage);
+            if (layers.AnimalPet.IsEnabled())
+                yield return new AnimalPetLayer(layers.Machines);
 
             // add separate grid layer if grid isn't enabled for all layers
             if (!config.ShowGrid && layers.TileGrid.IsEnabled())

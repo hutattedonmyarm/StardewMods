@@ -67,5 +67,14 @@
     "tillable.tillable": "ขุดได้เลย",
     "tillable.tilled": "ขุดไปแล้ว",
     "tillable.occupied": "มีอะไรมาขวางการขุด",
-    "tillable.not-tillable": "ขุดไม่ได้แน่นอน"
+    "tillable.not-tillable": "ขุดไม่ได้แน่นอน",
+
+    // forage //TODO
+    "forage.name": "Forage",
+    "forage.foregeable": "Forage items",
+
+    // animalpet //TODO
+    "animalpet.name": "Petting animals",
+    "animalpet.petted": "Pet animals",
+    "animalpet.notpetted": "Not yet pet animals"
 }

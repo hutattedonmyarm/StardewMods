@@ -71,5 +71,10 @@
 
     // forage
     "forage.name": "Recolección",
-    "forage.foregeable": "Ítems recolectados"
+    "forage.foregeable": "Ítems recolectados",
+
+    // animalpet //TODO
+    "animalpet.name": "Petting animals",
+    "animalpet.petted": "Pet animals",
+    "animalpet.notpetted": "Not yet pet animals" 
 }
