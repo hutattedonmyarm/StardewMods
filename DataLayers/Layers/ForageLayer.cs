@@ -2,10 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
-using Pathoschild.Stardew.Common;
 using Pathoschild.Stardew.DataLayers.Framework;
 using StardewValley;
-using SObject = StardewValley.Object;
 
 namespace Pathoschild.Stardew.DataLayers.Layers
 {
@@ -49,7 +47,7 @@ namespace Pathoschild.Stardew.DataLayers.Layers
                     select new TileData(forageItem.TileLocation, this.Forageable)
                 )
                 .ToArray();
-            return new[] { new TileGroup(forageItems) };
+            return new[] { new TileGroup(forageItems, outerBorderColor: Color.Green) };
         }
     }
 }
