@@ -67,5 +67,9 @@
     "tillable.tillable": "Arável",
     "tillable.tilled": "Já arado",
     "tillable.occupied": "Ocupado",
-    "tillable.not-tillable": "Não Arável"
+    "tillable.not-tillable": "Não Arável",
+
+    // forage
+    "forage.name": "Coleta",
+    "forage.foregeable": "Itens de Coleta"
 }

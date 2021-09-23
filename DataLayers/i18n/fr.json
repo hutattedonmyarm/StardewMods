@@ -67,5 +67,9 @@
     "tillable.tillable": "Labourable",
     "tillable.tilled": "Labourée",
     "tillable.occupied": "Occupée",
-    "tillable.not-tillable": "Non Labourable"
+    "tillable.not-tillable": "Non Labourable",
+
+    // forage
+    "forage.name": "Cueillette",
+    "forage.foregeable": "Objets cueillis"
 }

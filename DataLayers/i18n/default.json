@@ -67,5 +67,9 @@
     "tillable.tillable": "Tillable",
     "tillable.tilled": "Tilled",
     "tillable.occupied": "Occupied",
-    "tillable.not-tillable": "Not Tillable"
+    "tillable.not-tillable": "Not Tillable",
+
+    // forage
+    "forage.name": "Forage",
+    "forage.foregeable": "Forage items"
 }

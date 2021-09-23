@@ -156,6 +156,12 @@ namespace Pathoschild.Stardew.DataLayers.Framework
 
             /// <summary>The unique key for a translation equivalent to "Not Tillable".</summary>
             public const string Tillable_NotTillable = "tillable.not-tillable";
+
+            /// <summary>The unique key for a translation equivalent to "Forage".</summary>
+            public const string Forage_Name = "forage.name";
+
+            /// <summary>The unique key for a translation equivalent to "Forageable".</summary>
+            public const string Forage_Foregeable = "forage.foregeable";
         }
 
 
@@ -431,6 +437,12 @@ namespace Pathoschild.Stardew.DataLayers.Framework
         public static string Tillable_NotTillable()
         {
             return I18n.GetByKey(Keys.Tillable_NotTillable);
+        }
+
+        /// <summary>Get a translation equivalent to "Forage".</summary>
+        public static string Forage_Name()
+        {
+            return I18n.GetByKey(Keys.Forage_Name);
         }
 
         /// <summary>Get a translation by its key.</summary>

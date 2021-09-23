@@ -63,6 +63,9 @@ namespace Pathoschild.Stardew.DataLayers.Framework
 
             /// <summary>Settings for the tillable layer.</summary>
             public LayerConfig Tillable { get; set; } = new LayerConfig { UpdatesPerSecond = 2 };
+
+            /// <summary>Settings for the forage layer.</summary>
+            public LayerConfig Forage { get; set; } = new LayerConfig { UpdatesPerSecond = 2 };
         }
     }
 }
