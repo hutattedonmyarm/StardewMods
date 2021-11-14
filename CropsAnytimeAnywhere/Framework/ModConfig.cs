@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using StardewValley;
+using System.Runtime.Serialization;
 
 namespace Pathoschild.Stardew.CropsAnytimeAnywhere.Framework
 {
@@ -11,60 +11,34 @@ namespace Pathoschild.Stardew.CropsAnytimeAnywhere.Framework
         ** Accessors
         *********/
         /// <summary>The per-location settings.</summary>
-        public IDictionary<string, PerLocationConfig> InLocations { get; set; } = new Dictionary<string, PerLocationConfig>
+        public IDictionary<string, PerLocationConfig> Locations { get; set; } = new Dictionary<string, PerLocationConfig>
         {
-            ["*"] = new PerLocationConfig
+            ["*"] = new()
             {
                 GrowCrops = true,
-                GrowCropsOutOfSeason = true
+                GrowCropsOutOfSeason = true,
+                ForceTillable = new()
+                {
+                    Dirt = true,
+                    Grass = true
+                }
             }
         };
-
-        /// <summary>Whether to allow hoeing anywhere.</summary>
-        public ModConfigForceTillable ForceTillable { get; set; } = new ModConfigForceTillable();
 
 
         /*********
         ** Public methods
         *********/
-        /// <summary>Get the location config that applies for a given location name.</summary>
-        /// <param name="location">The location.</param>
-        public PerLocationConfig GetLocationConfig(GameLocation location)
+        /// <summary>Normalize the model after it's deserialized.</summary>
+        /// <param name="context">The deserialization context.</param>
+        [OnDeserialized]
+        public void OnDeserialized(StreamingContext context)
         {
-            return
-                (
-                    from entry in this.InLocations
-                    where this.AppliesTo(entry.Key, location)
-                    select entry.Value
-                )
-                .LastOrDefault();
-        }
+            this.Locations ??= new Dictionary<string, PerLocationConfig>();
 
-        /// <summary>Get whether this config applies to the given location.</summary>
-        /// <param name="key">The per-location key.</param>
-        /// <param name="location">The location instance.</param>
-        public bool AppliesTo(string key, GameLocation location)
-        {
-            key = key.ToLower();
-            string name = location.Name?.ToLower();
-            string uniqueName = location.NameOrUniqueName?.ToLower();
-
-            switch (key)
-            {
-                case "*":
-                    return true;
-
-                case "indoor":
-                case "indoors":
-                    return !location.IsOutdoors;
-
-                case "outdoor":
-                case "outdoors":
-                    return location.IsOutdoors;
-
-                default:
-                    return key == name || key == uniqueName;
-            }
+            // remove null values
+            foreach (string key in this.Locations.Where(p => p.Value == null).Select(p => p.Key).ToArray())
+                this.Locations.Remove(key);
         }
     }
 }
